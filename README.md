@@ -50,11 +50,12 @@ Mobile App View
 
 ### MVP: 
   1. Built with HTML, CSS, and JavaScript.
-  1. Styled using `Flexbox` or `Grid`.
+  1. Styled using `Flexbox`.
   1. Use Axios to make a request to two external data sources and insert some of the retrieved data on to the DOM.
   1. Implement responsive design using at least one media query/breakpoint 
-  1. Utilize local storage to save user's favorited quotes and previous journal entries 
+   
 ### Post-MVP: 
+  1. Utilize local storage to save user's favorited quotes and previous journal entries 
   1. Add event listeners to the "Save Entry" button that will trigger the animation of the mandala flower
 
   1. Add a third API that will play meditation music and option to change songs and display music information
@@ -64,10 +65,11 @@ Mobile App View
 |  Day | Deliverable | Status
 |---|---| ---|
 |November 5-7| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|November 8| Project Approval and Core Application Structure (HTML, CSS, etc.) | Incomplete
-|November 9| Pseudocode / actual code | Incomplete
+|November 8| Project Approval and Core Application Structure (HTML, CSS, JS) | Incomplete
+|November 9| Continuing with core application structure| Incomplete
 |November 10| Initial Clickable Model/implementing local storage| Incomplete
 |November 11| Finish all MVPs/Research Animation and third API | Incomplete
+|November 9| Pseudocode | Incomplete
 |November 12 - 14 | Finalize CSS and Test functionality | Incomplete
 |November 15| Presentations | Incomplete
 ### Priority Matrix: 
