@@ -1,9 +1,9 @@
 # Tranquility.com
 
 ### App Description:
-The Tranquility app was created to give people an opportunity to take a break from the everyday demand in a fast paced enviroment. It will allow the user to press a button that will generate a random inspirational quote, as well as a random picture of nature. It will also allow the user to journal their toughts and take a break to refresh their minds. The app will also store any favorite quotes and past journal entries as well.
+The Tranquility app was created to give people an opportunity to take a break from the everyday demand in a fast paced enviroment. It will allow the user to press a button that will generate a random inspirational quote, as well as a random picture of nature. It will also allow the user to journal their thoughts and take a break to refresh their minds. The app will also store any favorite quotes and past journal entries as well.
 ### API:
-1. Pixabay API - https://pixabay.com/api/
+1. Pixabay API - https://pixabay.com/api/docs/
 2. Zenquotes API - https://zenquotes.io/api/
 ### API Snippet: 
 1.
@@ -35,7 +35,10 @@ The Tranquility app was created to give people an opportunity to take a break fr
             "userImageURL": "https://cdn.pixabay.com/user/2013/10/03/21-10-36-920_250x250.jpg"```
         
 
-2. ```"q":"First comes the shy wish. Then you must have the heart to have the dream. Then, you work, and work.  ","a":"Estee Lauder","h":"<blockquote>&ldquo; First comes the shy wish. Then you must have the heart to have the dream. Then, you work, and work.  &rdquo; &mdash; <footer>Estee Lauder</footer></blockquote>"```
+2. 
+```
+"q":"First comes the shy wish. Then you must have the heart to have the dream. Then, you work, and work.  ","a":"Estee Lauder","h":"<blockquote>&ldquo; First comes the shy wish. Then you must have the heart to have the dream. Then, you work, and work.  &rdquo; &mdash; <footer>Estee Lauder</footer></blockquote>"
+```
 
 
 ### Wireframes:  
@@ -68,6 +71,26 @@ Mobile App View
 |November 12 - 14 | Finalize CSS and Test functionality | Incomplete
 |November 15| Presentations | Incomplete
 ### Priority Matrix: 
-A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as [Cloudinary](https://cloudinary.com/) or a similar hosting service.
+<img src="Pictures/Matrix.png" alt="Matrix" />
+
 ### Timeframes: 
-How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Creating Repo and README file | H | 4 hrs|  |  |
+| Setting up Repo with HTML, CSS, and JS files and linking | H | 1 hrs|  |  |
+| Working on header | H | 1.5 hrs|  |  |
+| Working with two main APIs and pulling in photos and quotes| H | 4 hrs|  |  |
+| Creating Buttons and event listeners | H | 3 hrs|  |  |
+| Creating form for journaling and formating | H | 2 hrs|  |  |
+| Researching local storage functionality | H | 2 hrs|  |  |
+| Code local storage for favorite quotes and journal entries| H | 3 hrs|  |  |
+| Add Images | H | .5 hrs|  |  |
+| CSS code for font and color | H | 4 hrs|  |  |
+| Format image with flexboxes | H | 1.5 hrs|  |  |
+| Creating website dynamic with media queries  | H | 2 hrs|  |  |
+| Researching creating animations with JS | H | 4 hrs|  |  |
+| Code animation for on save event | H | 3 hrs|  |  |
+| Pseudocode | H | 2 hrs|  |  |
+| Testing | H | 2 hrs|  |  |
+| Debugging | H | 3 hrs|  |  |
+| Total | H | 42.5 hrs|  |  |
