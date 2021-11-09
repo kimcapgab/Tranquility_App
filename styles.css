@@ -1,0 +1,40 @@
+body {
+  background-color: #FBE2D1;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.beginning {
+  background-color: #83C1C3;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  color: #FBE2D1;
+  text-align: center;
+}
+
+.image_quote {
+  padding: 250px;
+  text-align: center;
+}
+
+.quoteBtn {
+  background-color: #5AADAF ;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 13px;
+  color: aliceblue;
+  font-family: 'Spartan', sans-serif;
+  font-weight:600;
+}
+
+.middle {
+  color: #479295;
+  background-color: #F5B88E;
+  padding: 40px;
+  text-align: center;
+}
