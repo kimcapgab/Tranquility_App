@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="./script.js"></script>
   <title>Tranquility</title>
   <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -21,24 +21,30 @@
   <div class="beginning">
     <h1>We all deserve moments of Tranquility...</h1>
     <h3>Take a few moments of your day to enjoy a picture of nature and inspirational quote.</h3>
+    <img src="./Pictures/yoga-silhouette-6190663_1280.png" alt="yoga" style="float:left;width: 100px;height: 100px;">
   </div>
 
   <div class="image_quote">
+    <button type="button" class="quoteBtn">New Image and Quote</button>
+    <div id="quote">
+
+    </div>
+
     <div class="image">
     </div>
-    <button type="button" class="quoteBtn">New Image and Quote</button>
   </div>
 
   <div class="middle">
-    <h2>As you take this time for yourself, reflect on your thoughts and feelings below. Journaling is good for both
+    <h2>As you take this time for yourself, reflect on your thoughts and feelings below.<br /> Journaling is good for
+      both
       your mental and physical health, reducing stress, which boost your immune system.</h2>
   </div>
 
   <div>
     <form>
-      <textarea id="journal" placeholder="How are you feeling today?"></textarea>
+      <textarea id="journal" rows="10" placeholder="How are you feeling today?"></textarea>
       <br><br>
-      <input type="submit" value="Save Entry">
+      <input type="submit" id="save" value="Save Entry">
     </form>
   </div>
 
