@@ -31,6 +31,7 @@ p {
   color: #479295;
   font-weight: bolder;
   font-size: 130%;
+  /* word-break: break-all; */
 }
 
 .beginning {
@@ -44,16 +45,19 @@ p {
   
 }
 
-#button {
+/* #button {
   padding-bottom: 30px;
-}
+  overflow: hidden;
+  min-width: none;
+  text-align: center;
+} */
 
 .image_quote {
   padding-bottom: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -67,9 +71,13 @@ p {
   font-weight:600;
   border-style: none;
   margin-top: 30px;
-  margin-left: 400px;
-  margin-right: 400px;
+  /* margin-left: 400px;
+  margin-right: 400px; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#quote {
+  width: 80%;
 }
 
 
@@ -176,4 +184,127 @@ footer {
       height: 450px;
       width: auto;
     }
+}
+
+@media only screen and (max-width: 980px) {
+  
+  h1 {
+    font-weight: 900;
+    font-size: 180%;
+  }
+  
+  h3 {
+    font-size: 100%;
+    text-align: center;
+  }
+  
+  p {
+    color: #479295;
+    font-weight: bolder;
+    font-size: 110%;
+  }
+  .middle {
+    font-size: 80%;
+  }
+  .quoteBtn {
+    font-size: 11px;
+    padding: 12px;
+    /* margin-left: 350px;
+    margin-right: 350px; */
+    
+  }
+  textarea {
+    width: 45%;
+    font-size: 100%;
+  }
+  #save {
+    font-size: 11px;
+    padding: 14px;
+  }
+  img {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  
+  h1 {
+    font-weight: 900;
+    font-size: 180%;
+  }
+  
+  h3 {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  p {
+    color: #479295;
+    font-weight: bolder;
+    font-size: 100%;
+  }
+  .middle {
+    font-size: 60%;
+  }
+  .quoteBtn {
+    font-size: 11px;
+    padding: 12px;
+    /* margin-left: 350px;
+    margin-right: 350px; */
+    
+  }
+  textarea {
+    width: 45%;
+    font-size: 80%;
+  }
+  #save {
+    font-size: 11px;
+    padding: 14px;
+  }
+  img {
+    height: 350px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  
+  h1 {
+    font-weight: 900;
+    font-size: 150%;
+  }
+  
+  h3 {
+    font-size: 70%;
+    text-align: center;
+  }
+  
+  p {
+    color: #479295;
+    font-weight: bolder;
+    font-size: 80%;
+  }
+  .middle {
+    font-size: 48%;
+  }
+  .quoteBtn {
+    font-size: 9px;
+    padding: 10px;
+    /* margin-left: 350px;
+    margin-right: 350px; */
+    
+  }
+  textarea {
+    width: 55%;
+    font-size: 60%;
+  }
+  #save {
+    font-size: 9px;
+    padding: 10px;
+  }
+  img {
+    height: 200px;
+    width: auto;
+  }
 }
