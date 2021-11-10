@@ -1,7 +1,5 @@
 const cors = "https://boiling-mountain-84087.herokuapp.com/"
 
-
-
 //Pulling in the main div where the quote and image will be contained
 const mainDiv = document.querySelector(".image_quote")
 //Pullin in small div where the image will be contained
@@ -11,30 +9,36 @@ const quoteDiv = document.querySelector("#quote")
 //Pulling in the button that will generate a new quote and image upon clicking
 const newQuoteBtn = document.querySelector(".quoteBtn")
 
-
+// Function to get a random picture from the Pixabay API
 async function getPicture() {
-  const url = `${cors}https://pixabay.com/api/?key=24204891-57a8cc1bc012d56e30061d5e7&q=nature&image_type=photo`
+  const url = `${cors}https://pixabay.com/api/?key=24204891-57a8cc1bc012d56e30061d5e7&q=nature&image_type=photo&per_page=200`
   try {
     const res = await axios.get(url);
-    console.log(res);
-    let naturePic = res.data.hits[0].largeImageURL
-    // naturePic = `${cors}${naturePic}`
-    console.log(naturePic)
-    // console.log(typeof naturePic)
+    // console.log(res);
+    // Setting variable i to a random number from 0 to 200
+    let i = Math.floor(Math.random() * 200) + 1
+    // console.log(i)
+    let naturePic = res.data.hits[i].largeImageURL
+    // console.log(naturePic)
+    // Changing the URL string to an array
     naturePic = [naturePic];
-    // console.log(typeof naturePic)
-    console.log(naturePic)
+    // console.log(naturePic)
+    // Calling the function show Image to show the random image that was chosen
     showImage(naturePic);
   } catch (error) {
     console.log(error)
   }
 }
 
+//Function that will show the image onto the webpage
 function showImage(naturePic) {
+  // Creating a new img element
   let pic = document.createElement('img')
+  // Setting a value to the new pic variable
   pic.src = naturePic;
+  // Appending the picture to the smallDiv
   smallDiv.appendChild(pic)
-  console.log(naturePic);
+  // console.log(naturePic);
 }
 
 
@@ -76,7 +80,13 @@ function showQuote(quoteBlock) {
 // Adding event listener to button that will generate new image and quote
 newQuoteBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log("new request");
+  // console.log("new request");
   getQuote();
   getPicture();
+  removeOld();
 })
+
+function removeOld() {
+  quoteDiv.innerHTML = ""
+  smallDiv.innerHTML = ""
+}
