@@ -1,7 +1,20 @@
+
+
 body {
   background-color: #FBE2D1;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -10,36 +23,45 @@ h1 {
 }
 
 h3 {
-  font-size: 160%;
+  font-size: 150%;
+  text-align: center;
 }
 
 p {
   color: #479295;
   font-weight: bolder;
-  font-size: 150%;
+  font-size: 130%;
 }
 
 .beginning {
   background-color: #83C1C3;
   width: 100%;
-  padding: 20px;
-  position: relative;
+  position: center;
   color: #FBE2D1;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+}
+
+#button {
+  padding-bottom: 30px;
 }
 
 .image_quote {
-  padding-bottom: 25px;
+  padding-bottom: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .quoteBtn {
   background-color: #5AADAF ;
   border-radius: 10px;
   padding: 17px;
-  font-size: 18px;
+  font-size: 15px;
   color: whitesmoke;
   font-family: 'Spartan', sans-serif;
   font-weight:600;
@@ -47,54 +69,111 @@ p {
   margin-top: 30px;
   margin-left: 400px;
   margin-right: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+img {
+  object-fit: contain;
+  height: 550px;
+  width: auto;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .image {
   display: flex;
   justify-content: center;
+  flex: 1;
+  align-items: center;
 }
+
+
+
 
 .middle {
   color: #479295;
   background-color: #F5B88E;
-  padding: 40px;
+  /* padding: 40px; */
   text-align: center;
-  font-size: 120%;
+  font-size: 100%;
   margin: 0;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 form {
   text-align: center;
+
 }
 
 textarea {
   height: auto;
   box-sizing: border-box;
-  width: 80%;
+  width: 50%;
   font-family: 'Spartan', sans-serif;
   margin-top: 30px;
-  font-size: 130%;
+  font-size: 120%;
 }
 
 #save {
   background-color: #5AADAF ;
   border-radius: 10px;
   padding: 17px;
-  font-size: 18px;
+  font-size: 15px;
   color: whitesmoke;
   font-family: 'Spartan', sans-serif;
   font-weight:600;
   border-style: none;
   margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 footer {
   background-color: #83C1C3;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   position: relative;
   color: #FBE2D1;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 1250px) {
+  
+    h1 {
+      font-weight: 900;
+      font-size: 200%;
+    }
+    
+    h3 {
+      font-size: 120%;
+      text-align: center;
+    }
+    
+    p {
+      color: #479295;
+      font-weight: bolder;
+      font-size: 120%;
+    }
+    .middle {
+      font-size: 90%;
+    }
+    .quoteBtn {
+      font-size: 13px;
+    }
+    textarea {
+      width: 45%;
+      font-size: 110%;
+    }
+    #save {
+      font-size: 13px;
+    }
+    img {
+      height: 450px;
+      width: auto;
+    }
+}
