@@ -12,26 +12,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Spartan:wght@300;700&family=Zen+Loop&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Spartan:wght@300;700&display=swap"
     rel="stylesheet">
 
 </head>
 
 <body>
   <div class="page-wrap">
+
+
     <div class="beginning">
       <h1>We all deserve moments of Tranquility...</h1>
       <h3>Take a few moments of your day to enjoy a picture of nature and inspirational quote.</h3>
     </div>
+    <div class="playBtn">
+      <h6>Press icon for music</h6>
+      <img src="./Pictures/Play Icon_479295.png" alt="musicIcon" id="musicPlay">
+    </div>
+    <audio id="song">
+      <source
+        src="https://res.cloudinary.com/dn2x2ldxj/video/upload/v1636756366/531506__andrewkn__ambient-meditation-in-eternity_oaonzi.wav"
+        type="audio/wav">
+    </audio>
 
     <div id="button">
       <button type="button" class="quoteBtn">New Image and Quote</button>
+
     </div>
 
     <div class="image_quote">
-      <!-- <div id="button">
-        <button type="button" class="quoteBtn">New Image and Quote</button>
-      </div> -->
 
       <div id="quote">
 
@@ -47,13 +56,25 @@
         your mental and physical health, <br /> reducing stress, which boost your immune system.</h2>
     </div>
 
-    <div>
-      <form>
-        <textarea id="journal" rows="10" placeholder="How are you feeling today?"></textarea>
-        <br><br>
-        <input type="submit" id="save" value="Save Entry">
-      </form>
+    <div class="notesContain">
+      <div class="notes_side">
+        <button class="add_note" type="button">Add Entry</button>
+        <div class="all_notes">
+          <div class="noteItem noteItem--selected">
+            <div class="notes_title">Example</div>
+            <div class="notes_body">Today was a great day</div>
+            <div class="notes_update">Friday</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes_preview">
+        <input class="j_title" type="text" placeholder="Enter Title">
+        <textarea id="journal" class="j_body" rows="10" placeholder="How are you feeling today?"></textarea>
+      </div>
+
     </div>
+
   </div>
 </body>
 

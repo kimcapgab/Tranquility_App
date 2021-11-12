@@ -1,5 +1,6 @@
 const cors = "https://boiling-mountain-84087.herokuapp.com/"
 
+
 //Pulling in the main div where the quote and image will be contained
 const mainDiv = document.querySelector(".image_quote")
 //Pullin in small div where the image will be contained
@@ -90,3 +91,17 @@ function removeOld() {
   quoteDiv.innerHTML = ""
   smallDiv.innerHTML = ""
 }
+
+//Adding music to webpage
+let songPlay = document.querySelector("#song");
+let playIcon = document.querySelector("#musicPlay");
+playIcon.addEventListener("click", () => {
+  if (songPlay.paused) {
+    songPlay.play();
+    playIcon.src = "./Pictures/Pause Icon_479295.png";
+  } else {
+    songPlay.pause();
+    playIcon.src = "./Pictures/Play Icon_479295.png";
+  }
+})
+
