@@ -15,15 +15,11 @@ async function getPicture() {
   const url = `${cors}https://pixabay.com/api/?key=24204891-57a8cc1bc012d56e30061d5e7&q=nature&image_type=photo&per_page=200`
   try {
     const res = await axios.get(url);
-    // console.log(res);
     // Setting variable i to a random number from 0 to 200
     let i = Math.floor(Math.random() * 200) + 1
-    // console.log(i)
     let naturePic = res.data.hits[i].largeImageURL
-    // console.log(naturePic)
     // Changing the URL string to an array
     naturePic = [naturePic];
-    // console.log(naturePic)
     // Calling the function show Image to show the random image that was chosen
     showImage(naturePic);
   } catch (error) {
@@ -39,7 +35,6 @@ function showImage(naturePic) {
   pic.src = naturePic;
   // Appending the picture to the smallDiv
   smallDiv.appendChild(pic)
-  // console.log(naturePic);
 }
 
 
@@ -52,7 +47,6 @@ async function getQuote() {
     console.log(res2);
     // Getting the actual quote that was generated
     const quoteBlock = res2.data[0].q
-    console.log(quoteBlock)
     // Calling the function showQuote run for the quoteBlock
     showQuote(quoteBlock);
     // Getting the author of the quote that was generated

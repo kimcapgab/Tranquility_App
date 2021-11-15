@@ -32,7 +32,6 @@ p {
   color: #479295;
   font-weight: bolder;
   font-size: 130%;
-  /* word-break: break-all; */
 }
 
 .beginning {
@@ -128,7 +127,6 @@ img {
 .middle {
   color: #479295;
   background-color: #F5B88E;
-  /* padding: 40px; */
   text-align: center;
   font-size: 100%;
   margin: 0;
@@ -168,7 +166,6 @@ textarea {
 .notesContain {
   display: flex;
   height: 100%;
-  /* justify-content: space-evenly; */
 }
 
 .notes_side {
@@ -180,8 +177,6 @@ textarea {
 
 .noteItem {
   cursor: pointer;
-  /* background-color: #F5B88E;
-  border-radius: 8px; */
 }
 
 .noteItem--selected {
@@ -273,7 +268,6 @@ footer {
       font-size: 13px;
     }
     textarea {
-      /* width: 45%; */
       font-size: 110%;
     }
     .add_note {
@@ -315,12 +309,9 @@ footer {
   .quoteBtn {
     font-size: 11px;
     padding: 12px;
-    /* margin-left: 350px;
-    margin-right: 350px; */
     
   }
   textarea {
-    /* width: 45%; */
     font-size: 100%;
   }
   .add_note {
@@ -372,12 +363,9 @@ footer {
   .quoteBtn {
     font-size: 11px;
     padding: 12px;
-    /* margin-left: 350px;
-    margin-right: 350px; */
     
   }
   textarea {
-    /* width: 45%; */
     font-size: 80%;
   }
   .add_note {
