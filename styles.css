@@ -43,7 +43,6 @@ p {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  
 }
 
 #musicPlay {
@@ -113,12 +112,16 @@ img {
   box-shadow: none;
   height: 85px;
   width: auto;
+  
 }
 
 #yogaImg {
   box-shadow: none;
-  height: 75px;
+  height: 100px;
   width: auto;
+  float: left;
+  padding-left: 4%;
+  padding-top: 2%;
 }
 
 
@@ -406,6 +409,16 @@ footer {
     font-size: 10px;
   }
 
+  #flowerM {
+    height: 60px;
+    width: auto;
+    
+  }
+  
+  #yogaImg {
+    height: 70px;
+    width: auto;
+  }
 
 }
 
@@ -495,6 +508,17 @@ footer {
   .notes_update {
     padding: 8px;
     font-size: 6px;
+  }
+
+  #flowerM {
+    height: 40px;
+    width: auto;
+    
+  }
+  
+  #yogaImg {
+    height: 60px;
+    width: auto;
   }
 
 }
