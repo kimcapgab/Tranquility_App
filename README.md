@@ -1,4 +1,4 @@
-# Tranquility.com
+# [Tranquility App](https://kimcapgab.github.io/Tranquility_App/)
 
 ### App Description:
 The Tranquility app was created to give people an opportunity to take a break from the everyday demand in a fast paced enviroment. It will allow the user to press a button that will generate a random inspirational quote, as well as a random picture of nature. It will also allow the user to journal their thoughts and take a break to refresh their minds. The app will also store any favorite quotes and past journal entries as well.
