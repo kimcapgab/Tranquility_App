@@ -52,6 +52,8 @@ p {
   box-shadow: none;
 }
 
+
+
 h6 {
   font-size: 120%;
   color: #479295;
@@ -81,6 +83,11 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.quoteBtn:hover {
+  background-color:#F5B88E;
+  cursor: pointer;
+}
+
 #quote {
   width: 80%;
 }
@@ -102,7 +109,17 @@ img {
   align-items: center;
 }
 
+#flowerM {
+  box-shadow: none;
+  height: 85px;
+  width: auto;
+}
 
+#yogaImg {
+  box-shadow: none;
+  height: 75px;
+  width: auto;
+}
 
 
 .middle {
@@ -142,6 +159,7 @@ textarea {
 
 .add_note:hover {
   background-color:#F5B88E;
+  cursor: pointer;
 }
 
 .notesContain {
@@ -224,8 +242,8 @@ footer {
   position: relative;
   color: #FBE2D1;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -255,12 +273,19 @@ footer {
       /* width: 45%; */
       font-size: 110%;
     }
-    #save {
+    .add_note {
       font-size: 13px;
     }
     img {
       height: 450px;
       width: auto;
+    }
+    .j_title {
+      font-size: 120%;
+    }
+
+    .noteItem {
+      font-size: 90%;
     }
 }
 
@@ -295,7 +320,7 @@ footer {
     /* width: 45%; */
     font-size: 100%;
   }
-  #save {
+  .add_note {
     font-size: 11px;
     padding: 14px;
   }
@@ -303,6 +328,22 @@ footer {
     height: 400px;
     width: auto;
   }
+  .j_title {
+    font-size: 100%;
+  }
+
+  .noteItem {
+    font-size: 80%;
+  }
+
+  .notes_title {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -336,7 +377,7 @@ footer {
     /* width: 45%; */
     font-size: 80%;
   }
-  #save {
+  .add_note {
     font-size: 11px;
     padding: 14px;
   }
@@ -344,6 +385,28 @@ footer {
     height: 350px;
     width: auto;
   }
+
+  .j_title {
+    font-size: 80%;
+  }
+
+  .noteItem {
+    font-size: 60%;
+  }
+
+  .notes_title {
+    font-size: 15px;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  .notes_update {
+    font-size: 10px;
+  }
+
+
 }
 
 
@@ -359,6 +422,15 @@ footer {
     height: 250px;
     width: auto;
   }
+
+  .notes_preview {
+    padding: 15px;
+  }
+
+  .notes_side {
+    padding: 12px;
+  }
+
 }
 
 
@@ -386,20 +458,43 @@ footer {
   .quoteBtn {
     font-size: 9px;
     padding: 10px;
-    /* margin-left: 350px;
-    margin-right: 350px; */
     
   }
   textarea {
-    /* width: 55%; */
     font-size: 60%;
   }
-  #save {
+  .add_note {
     font-size: 9px;
-    padding: 10px;
+    padding: 8px;
   }
   img {
     height: 200px;
     width: auto;
   }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .notes_preview {
+    padding: 10px;
+  }
+
+  .notes_side {
+    padding: 8px;
+  }
+
+  .notes_title {
+    font-size: 12px;
+  }
+
+  .notes_body {
+    font-size: 8px;
+  }
+
+  .notes_update {
+    padding: 8px;
+    font-size: 6px;
+  }
+
 }

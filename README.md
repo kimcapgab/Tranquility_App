@@ -58,7 +58,7 @@ Mobile App View
   1. Utilize local storage to save user's favorited quotes and previous journal entries 
   1. Add event listeners to the "Save Entry" button that will trigger the animation of the mandala flower
 
-  1. Add a third API that will play meditation music and option to change songs and display music information
+  1. Add music that will play meditation music.
 
   1. Create a timer that helps user breath in and breath out in sync with an animation 
 ### Goals: 
@@ -78,21 +78,43 @@ Mobile App View
 ### Timeframes: 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating Repo and README file | H | 4 hrs|  |  |
-| Setting up Repo with HTML, CSS, and JS files and linking | H | 1 hrs|  |  |
-| Working on header | H | 1.5 hrs|  |  |
-| Working with two main APIs and pulling in photos and quotes| H | 4 hrs|  |  |
-| Creating Buttons and event listeners | H | 3 hrs|  |  |
-| Creating form for journaling and formating | H | 2 hrs|  |  |
-| Researching local storage functionality | H | 2 hrs|  |  |
-| Code local storage for favorite quotes and journal entries| H | 3 hrs|  |  |
-| Add Images | H | .5 hrs|  |  |
-| CSS code for font and color | H | 4 hrs|  |  |
-| Format image with flexboxes | H | 1.5 hrs|  |  |
-| Creating website dynamic with media queries  | H | 2 hrs|  |  |
-| Researching creating animations with JS | H | 4 hrs|  |  |
-| Code animation for on save event | H | 3 hrs|  |  |
-| Pseudocode | H | 2 hrs|  |  |
-| Testing | H | 2 hrs|  |  |
-| Debugging | H | 3 hrs|  |  |
+| Creating Repo and README file | H | 4 hrs| 4hrs | 4hrs |
+| Setting up Repo with HTML, CSS, and JS files and linking | H | 1 hrs| .5 hrs |.5 hr  |
+| Working on header | H | 1.5 hrs| 1 hr | 1 hr |
+| Working with Pixabay API and pulling in photos| H | 4 hrs| 4 hrs | 4 hrs |
+| Working with ZenQuote API and pulling in quotes| H | 4 hrs|4 hrs  | 4 hrs |
+| Creating Buttons and event listeners | H | 3 hrs| 1 hr | 1 hr  |
+| Creating form for journaling and formating | H | 2 hrs| 2 hrs | 2 hrs |
+| Researching local storage functionality | H | 2 hrs| 4 hrs | 4 hrs |
+| Add Images | H | .5 hrs| 1.5 hrs | 1.5 hrs |
+| CSS code for font and color | H | 4 hrs| 4 hrs | 4 hrs |
+| Format image with flexboxes | H | 1.5 hrs| 2 hrs | 2 hrs |
+| Creating website dynamic with media queries  | H | 2 hrs| 2.5 hrs | 2.5 hrs |
+| Researching creating animations with JS | H | 4 hrs| 4 hrs | 4 hrs |
+| Pseudocode | H | 2 hrs| 2 hrs | 2 hrs |
+| Testing | H | 2 hrs| 1 hr | 1 hr |
+| Debugging | H | 3 hrs| 4 hr | 4 hr |
 | Total | H | 42.5 hrs|  |  |
+
+## Code Snippet
+
+Below is the code I wrote to add some music to my webpage, which I thought was a cool addition. 
+
+```
+let songPlay = document.querySelector("#song");
+let playIcon = document.querySelector("#musicPlay");
+playIcon.addEventListener("click", () => {
+  if (songPlay.paused) {
+    songPlay.play();
+    playIcon.src = "./Pictures/Pause Icon_479295.png";
+  } else {
+    songPlay.pause();
+    playIcon.src = "./Pictures/Play Icon_479295.png";
+  }
+})
+
+```
+
+## Change Log
+- The notes section format was changed, as I started to work with local storage. I changed the format to fit more what I had in mind. As this is a post MVP, I will come back to finish.
+- I also was not able to add the heart favorite, so that part is missing, but I will come back to it.
