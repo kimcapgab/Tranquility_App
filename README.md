@@ -94,7 +94,7 @@ Mobile App View
 | Pseudocode | H | 2 hrs| 2 hrs | 2 hrs |
 | Testing | H | 2 hrs| 1 hr | 1 hr |
 | Debugging | H | 3 hrs| 4 hr | 4 hr |
-| Total | H | 42.5 hrs|  |  |
+| Total | H | 38.5 hrs| 41.5 hr | 41.5 hrs |
 
 ## Code Snippet
 
