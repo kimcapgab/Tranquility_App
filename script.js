@@ -1,4 +1,4 @@
-const cors = "https://boiling-mountain-84087.herokuapp.com/"
+const cors = "https://corsanywhere.herokuapp.com/"
 
 
 //Pulling in the main div where the quote and image will be contained
@@ -12,7 +12,7 @@ const newQuoteBtn = document.querySelector(".quoteBtn")
 
 // Function to get a random picture from the Pixabay API
 async function getPicture() {
-  const url = `${cors}https://pixabay.com/api/?key=24204891-57a8cc1bc012d56e30061d5e7&q=nature&image_type=photo&per_page=200`
+  const url = `https://pixabay.com/api/?key=24204891-57a8cc1bc012d56e30061d5e7&q=nature&image_type=photo&per_page=200`
   try {
     const res = await axios.get(url);
     // Setting variable i to a random number from 0 to 200
@@ -99,3 +99,26 @@ playIcon.addEventListener("click", () => {
   }
 })
 
+//Function for Journal 
+
+// Saving Title to Local Storage 
+
+function saveTitle() {
+  let journalTitle = document.querySelector(".j_title").value 
+  localStorage.setItem(".j_title", journalTitle)
+  document.querySelector(".j_title").value = localStorage.getItem(".j_title")
+  console.log("Title Saved")
+}
+
+document.querySelector(".j_title").value = localStorage.getItem(".j_title")
+
+// Saving Body to Local Storage 
+
+function saveBody() {
+  let journalBody = document.querySelector(".j_body").value 
+  localStorage.setItem(".j_body", journalBody)
+  document.querySelector(".j_body").value = localStorage.getItem(".j_body")
+  console.log("Body Saved")
+}
+
+document.querySelector(".j_body").value = localStorage.getItem(".j_body")
