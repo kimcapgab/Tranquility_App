@@ -1,19 +1,19 @@
 export default class NotesView {
   constructor(root, { onNoteSelect, onNoteAdd, onNoteEdit, onNoteDelete } = {}) {
-    this.root = root
-    this.onNoteSelect = onNoteSelect
-    this.onNoteAdd = onNoteAdd
-    this.onNoteEdit = onNoteEdit
-    this.onNoteDelete = onNoteDelete
-    this.root.innerHTML = `
+      this.root = root;
+      this.onNoteSelect = onNoteSelect;
+      this.onNoteAdd = onNoteAdd;
+      this.onNoteEdit = onNoteEdit;
+      this.onNoteDelete = onNoteDelete;
+      this.root.innerHTML = `
       <div class="notes_side">
         <button class="add_note" type="button">Add Entry</button>
         <div class="all_notes"></div>
       </div>
 
       <div class="notes_preview">
-        <input id="journal" class="j_title" type="text" placeholder="Enter Title">
-        <textarea id="journal" class="j_body" rows="10" placeholder="How are you feeling today?"></textarea>
+        <input class="j_title" type="text" placeholder="Enter Title">
+        <textarea class="j_body" rows="10" placeholder="How are you feeling today?"></textarea>
       </div>
     `;
 
@@ -22,8 +22,8 @@ export default class NotesView {
     const inpBody = this.root.querySelector(".j_body");
 
     btnAddNote.addEventListener("click", () => {
-      this.onNoteAdd()
-    })
+      this.onNoteAdd();
+  });
 
     inpTitle.addEventListener("blur", () => {
       const updatedTitle = inpTitle.value.trim();
@@ -37,13 +37,11 @@ export default class NotesView {
       this.onNoteEdit(updatedTitle, updatedBody)
     })
 
-    // console.log(this._createListItemHTML(300, "Hey", "yeah", new Date()))
-
-    this.updateNotePreviewVisibility(false)
+    this.updateNotePreviewVisibility(false);
 
   }
   _createListItemHTML(id, title, body, updated) {
-    const MAX_BODY_LENGTH = 60
+    const MAX_BODY_LENGTH = 60;
     return `
     <div class="noteItem" data-note-id="${id}">
       <div class="notes_title">${title}</div>
@@ -61,33 +59,34 @@ export default class NotesView {
   updateNoteList(notes) {
     const notesListContainer = this.root.querySelector(".all_notes")
     //Empty List
-    notesListContainer.innerHTML = ""
+    notesListContainer.innerHTML = "";
     for (const note of notes) {
-      const html = this._createListItemHTML(note.id, note.title, note.body, new Date(note.updated))
+      const html = this._createListItemHTML(note.id, note.title, note.body, new Date(note.updated));
+
       notesListContainer.insertAdjacentHTML("beforeend", html);
-    }
+  }
     // Add the select/delete events for each list item
     notesListContainer.querySelectorAll(".noteItem").forEach(noteListItem => {
       noteListItem.addEventListener("click", () => {
-        console.log("testing view file selected")
-        console.log(noteListItem.dataset.noteId)
-        this.onNoteSelect(noteListItem.dataset.noteId)
-        console.log(noteListItem.dataset.noteId)
-      })
+        this.onNoteSelect(noteListItem.dataset.noteId);
+      });
+      
       noteListItem.addEventListener("dblclick", () => {
-        const doDelete = confirm("Are you sure you want to delete this note?")
+        const doDelete = confirm("Are you sure you want to delete this note?");
+
         if (doDelete) {
-          this.onNoteDelete(noteListItem.dataset.noteId)
+            this.onNoteDelete(noteListItem.dataset.noteId);
         }
-      })
     });
+});
   }
+  
   updateActiveNote(note) {
     this.root.querySelector('.j_title').value = note.title
     this.root.querySelector('.j_body').value = note.body
 
     this.root.querySelectorAll(".noteItem").forEach(noteListItem => {
-      noteListItem.classList.remove("noteItem--selected")
+      noteListItem.classList.remove('noteItem--selected')
     })
     this.root.querySelector(`.noteItem[data-note-id="${note.id}"]`).classList.add('noteItem--selected')
   }

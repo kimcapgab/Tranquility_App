@@ -1,5 +1,3 @@
-
-
 export default class NotesApi {
   static getAllNotes() {
     const notes = JSON.parse(localStorage.getItem("notesapp-notes") || "[]")
@@ -11,7 +9,7 @@ export default class NotesApi {
 
   static saveNote(noteToSave) {
     const notes = NotesApi.getAllNotes()
-    const existing = notes.find(note => note.id = noteToSave.id)
+    const existing = notes.find(note => note.id == noteToSave.id)
     // Edit/Update
     if (existing) {
       existing.title = noteToSave.title
@@ -21,7 +19,6 @@ export default class NotesApi {
       noteToSave.id = Math.floor(Math.random() * 1000000)
       noteToSave.updated = new Date().toISOString()
       notes.push(noteToSave)
-      console.log(notes)
     }
     localStorage.setItem("notesapp-notes", JSON.stringify(notes))
   }

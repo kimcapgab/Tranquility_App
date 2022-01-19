@@ -173,13 +173,14 @@ textarea {
 }
 
 .noteItem--selected {
-  background: rgba(245, 184, 142, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #83c1c3;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-weight: bold;
+  color: whitesmoke;
 }
 
 .notes_title,

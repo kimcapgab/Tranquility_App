@@ -39,8 +39,8 @@ export default class App {
       },
       onNoteAdd: () => {
         const newNote = {
-          title: "New Entry",
-          body: "Take note...",
+          title: "",
+          body: "",
         }
         NotesApi.saveNote(newNote)
         this._refreshNotes()
@@ -50,11 +50,13 @@ export default class App {
           id: this.activeNote.id,
           title,
           body
-        })
-        this._refreshNotes()
+      });
+
+      this._refreshNotes();
       },
       onNoteDelete: noteId => {
-        console.log("Note Deleted " + noteId)
+        NotesApi.deleteNote(noteId);
+        this._refreshNotes();
       }
     }
   }
