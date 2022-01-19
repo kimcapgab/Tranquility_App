@@ -1,3 +1,5 @@
+
+
 const cors = "https://corsanywhere.herokuapp.com/"
 
 
@@ -99,26 +101,3 @@ playIcon.addEventListener("click", () => {
   }
 })
 
-//Function for Journal 
-
-// Saving Title to Local Storage 
-
-function saveTitle() {
-  let journalTitle = document.querySelector(".j_title").value 
-  localStorage.setItem(".j_title", journalTitle)
-  document.querySelector(".j_title").value = localStorage.getItem(".j_title")
-  console.log("Title Saved")
-}
-
-document.querySelector(".j_title").value = localStorage.getItem(".j_title")
-
-// Saving Body to Local Storage 
-
-function saveBody() {
-  let journalBody = document.querySelector(".j_body").value 
-  localStorage.setItem(".j_body", journalBody)
-  document.querySelector(".j_body").value = localStorage.getItem(".j_body")
-  console.log("Body Saved")
-}
-
-document.querySelector(".j_body").value = localStorage.getItem(".j_body")

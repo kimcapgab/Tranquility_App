@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./js_files/script.js" type="module"></script>
+    <script defer src="./js_files/NoteMain.js" type="module"></script>
+    <title>Tranquility</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Spartan:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script defer src="./script.js" type="module"></script>
-  <title>Tranquility</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Spartan:wght@300;700&display=swap"
-    rel="stylesheet">
+  <body>
+    <div class="page-wrap">
+      <div class="beginning">
+        <img
+          src="./Pictures/yoga-silhouette-6190663_1280.png"
+          alt="yoga"
+          id="yogaImg"
+        />
+        <h1>We all deserve moments of Tranquility...</h1>
+        <h3>
+          Take a few moments of your day to enjoy a picture of nature and
+          inspirational quote.
+        </h3>
+      </div>
+      <div class="playBtn">
+        <h6>Press icon for music</h6>
+        <img
+          src="./Pictures/Play Icon_479295.png"
+          alt="musicIcon"
+          id="musicPlay"
+        />
+      </div>
+      <audio id="song">
+        <source
+          src="https://res.cloudinary.com/dn2x2ldxj/video/upload/v1636756366/531506__andrewkn__ambient-meditation-in-eternity_oaonzi.wav"
+          type="audio/wav"
+        />
+      </audio>
 
-</head>
-
-<body>
-  <div class="page-wrap">
-
-
-    <div class="beginning">
-      <img src="./Pictures/yoga-silhouette-6190663_1280.png" alt="yoga" id="yogaImg">
-      <h1>We all deserve moments of Tranquility...</h1>
-      <h3>Take a few moments of your day to enjoy a picture of nature and inspirational quote.</h3>
-
-    </div>
-    <div class="playBtn">
-      <h6>Press icon for music</h6>
-      <img src="./Pictures/Play Icon_479295.png" alt="musicIcon" id="musicPlay">
-    </div>
-    <audio id="song">
-      <source
-        src="https://res.cloudinary.com/dn2x2ldxj/video/upload/v1636756366/531506__andrewkn__ambient-meditation-in-eternity_oaonzi.wav"
-        type="audio/wav">
-    </audio>
-
-    <div id="button">
-      <button type="button" class="quoteBtn">New Image and Quote</button>
-
-    </div>
-
-    <div class="image_quote">
-
-      <div id="quote">
-
+      <div id="button">
+        <button type="button" class="quoteBtn">New Image and Quote</button>
       </div>
 
-      <div class="image">
+      <div class="image_quote">
+        <div id="quote"></div>
+
+        <div class="image"></div>
       </div>
 
+      <div class="middle">
+        <h2>
+          As you take this time for yourself, reflect on your thoughts and
+          feelings below.<br />
+          Journaling is good for both your mental and physical health, <br />
+          reducing stress, which boost your immune system.
+        </h2>
+      </div>
 
-    </div>
-
-    <div class="middle">
-      <h2>As you take this time for yourself, reflect on your thoughts and feelings below.<br /> Journaling is good for
-        both
-        your mental and physical health, <br /> reducing stress, which boost your immune system.</h2>
-    </div>
-
-    <div class="notesContain">
-      <div class="notes_side">
+      <div class="notesContain" id="app">
+        <!-- <div class="notes_side">
         <button class="add_note" type="button">Add Entry</button>
         <div class="all_notes">
           <div class="noteItem noteItem--selected">
@@ -75,15 +80,13 @@
       <div class="notes_preview">
         <input class="j_title" type="text" placeholder="Enter Title">
         <textarea id="journal" class="j_body" rows="10" placeholder="How are you feeling today?"></textarea>
+      </div> -->
       </div>
     </div>
+  </body>
 
-  </div>
-</body>
-
-<footer>
-  <p>Kim Capilla Gabbert</p>
-  <img src="./Pictures/mandala-1757304_1280.png" alt="flower" id="flowerM">
-</footer>
-
+  <footer>
+    <p>Kim Capilla Gabbert</p>
+    <img src="./Pictures/mandala-1757304_1280.png" alt="flower" id="flowerM" />
+  </footer>
 </html>
